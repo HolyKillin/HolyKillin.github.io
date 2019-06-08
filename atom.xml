@@ -5,9 +5,9 @@
   <subtitle>—— A colorful world</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://holykillin.github.io/"/>
+  <link href="http://kaijiangyu.gitee.io/holykillin.github.io/"/>
   <updated>2019-06-01T11:37:05.904Z</updated>
-  <id>https://holykillin.github.io/</id>
+  <id>http://kaijiangyu.gitee.io/holykillin.github.io/</id>
   
   <author>
     <name>SaintKylin</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://holykillin.github.io/2019/06/01/hello-world/"/>
-    <id>https://holykillin.github.io/2019/06/01/hello-world/</id>
+    <link href="http://kaijiangyu.gitee.io/holykillin.github.io/2019/06/01/hello-world/"/>
+    <id>http://kaijiangyu.gitee.io/holykillin.github.io/2019/06/01/hello-world/</id>
     <published>2019-06-01T11:37:05.852Z</published>
     <updated>2019-06-01T11:37:05.904Z</updated>
     
