@@ -14,24 +14,25 @@
     
     
     
-    <title>album | LushPlanet | —— A colorful world</title>
+    <title>js中当数字与字符串相遇 | LushPlanet | —— A colorful world</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content>
-    <meta name="description" content="Share what I see and think,it just like facebook or QZone">
-<meta property="og:type" content="website">
-<meta property="og:title" content="album">
-<meta property="og:url" content="https://holykillin.github.io/album/index.html">
+    <meta name="keywords" content="JavaScript">
+    <meta name="description" content="备忘录js中字符串与数字间的运算分三种情况 第一种，加号“+”：“12” + 12 = 12 + “12” = “1212” 无论怎么变换位置，结果都为字符串，因为“ + ”是个特殊的符号，除了基本运算外，在程序里还有个作用就是——连接，除非两个都是数字，否则都会把其中的数字转换为字符串相连接。 第二种，第一个（无论是字串还是数字）前面有符号： td{    border:1px solid }">
+<meta name="keywords" content="JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js中当数字与字符串相遇">
+<meta property="og:url" content="https://holykillin.github.io/2019/06/09/js中当数字与字符串相遇/index.html">
 <meta property="og:site_name" content="LushPlanet">
-<meta property="og:description" content="Share what I see and think,it just like facebook or QZone">
+<meta property="og:description" content="备忘录js中字符串与数字间的运算分三种情况 第一种，加号“+”：“12” + 12 = 12 + “12” = “1212” 无论怎么变换位置，结果都为字符串，因为“ + ”是个特殊的符号，除了基本运算外，在程序里还有个作用就是——连接，除非两个都是数字，否则都会把其中的数字转换为字符串相连接。 第二种，第一个（无论是字串还是数字）前面有符号： td{    border:1px solid }">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2019-06-07T06:42:52.176Z">
+<meta property="og:updated_time" content="2019-06-09T10:49:00.818Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="album">
-<meta name="twitter:description" content="Share what I see and think,it just like facebook or QZone">
+<meta name="twitter:title" content="js中当数字与字符串相遇">
+<meta name="twitter:description" content="备忘录js中字符串与数字间的运算分三种情况 第一种，加号“+”：“12” + 12 = 12 + “12” = “1212” 无论怎么变换位置，结果都为字符串，因为“ + ”是个特殊的符号，除了基本运算外，在程序里还有个作用就是——连接，除非两个都是数字，否则都会把其中的数字转换为字符串相连接。 第二种，第一个（无论是字串还是数字）前面有符号： td{    border:1px solid }">
     
         <link rel="alternate" type="application/atom+xml" title="LushPlanet" href="/atom.xml">
     
@@ -75,7 +76,7 @@
               </a>
             </li>
         
-            <li class="waves-block waves-effect active">
+            <li class="waves-block waves-effect">
               <a href="/album">
                 <i class="icon icon-lg icon-photo"></i>
                 相册
@@ -114,7 +115,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">album</div>
+        <div class="flex-col header-title ellipsis">js中当数字与字符串相遇</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -133,7 +134,7 @@
         
     </div>
 </header>
-<header class="content-header page-header">
+<header class="content-header post-header">
 	<div class="shutter">
 	<div class="shutter-img">
 	  <a href="#" data-shutter-title="听之，闻之，见之，感之"><img src="../img/shutter_1.jpg" alt="#"></a>
@@ -166,8 +167,16 @@
 	});
 	</script>
     <div class="container fade-scale" style="z-index: 10;position: absolute;top: 10%;text-align: -webkit-center;">
-        <h1 class="title">album</h1>
+        <h1 class="title">js中当数字与字符串相遇</h1>
         <h2 class="subtitle">
+            
+                <time datetime="2019-06-09T03:48:00.000Z" itemprop="datePublished" class="page-time">
+  2019-06-09
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/大前端/">大前端</a></li></ul>
+
             
         </h2>
     </div>
@@ -179,19 +188,83 @@
 
 
 <div class="container body-wrap">
-    <article class="page-article fade" itemprop="blogPage">
-        <div class="post-content page-content" id="page-content" itemprop="pageContent">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#备忘录"><span class="post-toc-number">1.</span> <span class="post-toc-text">备忘录</span></a></li></ol><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#第一种，加号“-”："><span class="post-toc-number"></span> <span class="post-toc-text">第一种，加号“+”：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#第二种，第一个（无论是字串还是数字）前面有符号："><span class="post-toc-number"></span> <span class="post-toc-text">第二种，第一个（无论是字串还是数字）前面有符号：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#第三种，其他运算符："><span class="post-toc-number"></span> <span class="post-toc-text">第三种，其他运算符：</span></a>
+        </li></nav>
+    </aside>
+
+
+<article id="post-js中当数字与字符串相遇" class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">js中当数字与字符串相遇</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-06-09 11:48:00" datetime="2019-06-09T03:48:00.000Z" itemprop="datePublished">2019-06-09</time>
+
             
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/大前端/">大前端</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style="display:none">
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h5 id="备忘录"><a href="#备忘录" class="headerlink" title="备忘录"></a>备忘录</h5><p>js中字符串与数字间的运算分三种情况</p>
+<h4 id="第一种，加号“-”："><a href="#第一种，加号“-”：" class="headerlink" title="第一种，加号“+”："></a>第一种，加号“+”：</h4><p>“12” + 12 = 12 + “12” = “1212”</p>
+<p>无论怎么变换位置，结果都为字符串，因为“ + ”是个特殊的符号，除了基本运算外，在程序里还有个作用就是——连接，除非两个都是数字，否则都会把其中的数字转换为字符串相连接。</p>
+<h4 id="第二种，第一个（无论是字串还是数字）前面有符号："><a href="#第二种，第一个（无论是字串还是数字）前面有符号：" class="headerlink" title="第二种，第一个（无论是字串还是数字）前面有符号："></a>第二种，第一个（无论是字串还是数字）前面有符号：</h4><style>
+td{
+   border:1px solid
+}
+  p{text-indent:2em;font-size:21px;font-family:楷体,cursive}
+</style>
+<table>
+<tr><td>+"12" + 12 = +12 + 12 = 24 </td><td>因为"12"前面有+号（或者叫连字符），+号前面没有别的东西了，所以就判断它表示的是 一个“正”数，进而将“12”转换成了数字。</td></tr>
+<tr><td>+12 + "12" = 12 + "12" ="1212"</td><td>这个就跟第一种一样了</td></tr>
+</table>
+
+<h4 id="第三种，其他运算符："><a href="#第三种，其他运算符：" class="headerlink" title="第三种，其他运算符："></a>第三种，其他运算符：</h4><p>“12” - 12 = 0   “12” * 12 = 144   “12” / 12 = 1 </p>
+<p>其他运算符仅此一种作用，因而当字串遇到它们时，就自转为数字了。</p>
+
         </div>
 
+        <blockquote class="post-copyright">
+    
+    <div class="content">
         
-        <div class="card page-about-me flex-row">
-            <a href="/" class="avatar waves-effect waves-circle waves-light"><img src="/img/168acf1f8a645a274a15d013da11f233.gif"></a>
-            <div class="content flex-col">
-                <p><strong>SaintKylin</strong></p>
-                <p><em>—— A colorful world</em></p>
-                <p>用户页面中作者相关的描述性文字，如不需要设为 false</p>
-            </div>
+<span class="post-time">
+    Last updated: <time datetime="2019-06-09T10:49:00.818Z" itemprop="dateUpdated">2019-06-09 18:49:00</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2019/06/09/js中当数字与字符串相遇/" target="_blank" rel="external">https://holykillin.github.io/2019/06/09/js中当数字与字符串相遇/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="https://holykillin.github.io">
+            <img src="/img/168acf1f8a645a274a15d013da11f233.gif" alt="SaintKylin">
+            SaintKylin
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li></ul>
+
 
             
 <div class="page-share-wrap">
@@ -200,7 +273,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://holykillin.github.io/album/&title=《album》 — LushPlanet&pic=https://holykillin.github.io/img/168acf1f8a645a274a15d013da11f233.gif" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://holykillin.github.io/2019/06/09/js中当数字与字符串相遇/&title=《js中当数字与字符串相遇》 — LushPlanet&pic=https://holykillin.github.io/img/168acf1f8a645a274a15d013da11f233.gif" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -210,22 +283,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://holykillin.github.io/album/&title=《album》 — LushPlanet&source=Share what I see and think,it just like facebook or QZone" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://holykillin.github.io/2019/06/09/js中当数字与字符串相遇/&title=《js中当数字与字符串相遇》 — LushPlanet&source=Share what I see and think,it just like facebook or QZone" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://holykillin.github.io/album/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://holykillin.github.io/2019/06/09/js中当数字与字符串相遇/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《album》 — LushPlanet&url=https://holykillin.github.io/album/&via=https://holykillin.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《js中当数字与字符串相遇》 — LushPlanet&url=https://holykillin.github.io/2019/06/09/js中当数字与字符串相遇/&via=https://holykillin.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://holykillin.github.io/album/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://holykillin.github.io/2019/06/09/js中当数字与字符串相遇/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -242,12 +315,25 @@
 
 
         </div>
-        
+    </div>
 
-        
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2019/06/01/hello-world/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Hello World</h4>
+      </a>
+    </div>
+  
+</nav>
 
 
-        
+
+    
 
 
 
@@ -292,8 +378,9 @@
 
 
 
-    </article>
-    
+</article>
+
+
 
 </div>
 
@@ -336,7 +423,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://holykillin.github.io/album/&title=《album》 — LushPlanet&pic=https://holykillin.github.io/img/168acf1f8a645a274a15d013da11f233.gif" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://holykillin.github.io/2019/06/09/js中当数字与字符串相遇/&title=《js中当数字与字符串相遇》 — LushPlanet&pic=https://holykillin.github.io/img/168acf1f8a645a274a15d013da11f233.gif" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -346,22 +433,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://holykillin.github.io/album/&title=《album》 — LushPlanet&source=Share what I see and think,it just like facebook or QZone" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://holykillin.github.io/2019/06/09/js中当数字与字符串相遇/&title=《js中当数字与字符串相遇》 — LushPlanet&source=Share what I see and think,it just like facebook or QZone" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://holykillin.github.io/album/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://holykillin.github.io/2019/06/09/js中当数字与字符串相遇/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《album》 — LushPlanet&url=https://holykillin.github.io/album/&via=https://holykillin.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《js中当数字与字符串相遇》 — LushPlanet&url=https://holykillin.github.io/2019/06/09/js中当数字与字符串相遇/&via=https://holykillin.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://holykillin.github.io/album/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://holykillin.github.io/2019/06/09/js中当数字与字符串相遇/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -372,7 +459,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABx0lEQVR42u3aSW7DQAwEQP//08o1QGClmxIVI6g5CdZW8oEYLq9XvI5v6+fv59ecP/O1sXBxcS9zj9P1jvKOnj/n/Pe3H4+Li/sg9zzQtNdcOf7FhouL+8HcPJAloRAXF/d/cJOE53yzgouL+/ncJAy1L0sSnsVcDRcX9wK3LW5uJzy31XdxcXFH3KNcs6bLcdPCxcV9hpsHlHYb1J4tmru4uLjL3POiZzJ4sZHAFCEMFxd3gZu3SfIyR3LvLGji4uI+yW2LFzc0SkdbIlxc3Ge4LWVW8mhHNOrkBxcX91ZuS2kHL660bYqeMC4u7gI3H6po0TliNviFi4u7x80f1A5stZRo64OLi7vMvevF7dlZsoSLi/sMNw9VeYC73lCpK7u4uLiPcGfNleRT27AVBTJcXNw1bjtUkd+Vl1aHuRouLu4at7jhromP2fAWLi7uMvcoV9sonf01RTcGFxd3gTsbicjbq3lBdtgTxsXFXeMmwStPbPIRjdlAGC4u7pPcuqVRJkKz5/xSFsHFxf0YbrIdSbY+wxQLFxf3I7ltAfRS1nVX3MXFxR1xZ03TdiyjHenAxcX9K24bSvJCRn7cDn/g4uKucb8AVRp7ivFHaaMAAAAASUVORK5CYII=" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACt0lEQVR42u3a0WrrQAwE0P7/T7evF9okM9JuyIXjpxIc28eFXWWkr6/4+A6Of8/8/fejT56f+eguhw88PDy8o4/++5zkCs+p+V3yKzx8Qjw8PLxrvOeLdbJw1zeO2cnzPPwcDw8P7wN47baRV7nJ+Xh4eHj/Iy9f3JNP2peIh4eH9zm8TTj7fHvYBwqrwh0PDw/vAi8vgj/n7yv9PTw8PLxDAwF5QXzqmseeFg8PD+8CL19w81bWqYGDWbmMh4eH935e27Bvo4R8OCAJdpNv4eHh4d3g5Yt4G/vu4+BhGZ1nzHh4eHgjXhsZnPpWuxW1rw8PDw/vBi/SlyHCqRHYtoxeTbni4eHhHR0jyCOGdvQqD3Avjl7h4eHhjXi5e9aOmi39mxUeDw8P7x4vuVnb/j/VDMsL6Bf/Nzw8PLwLvLYs3hfQ7RBA/q0/NgY8PDy8o7z9+pkv2XmRnb+gKIzGw8PDu8xr20t5cdy2ytoX9PA6eHh4eEd5ecQwa32dCnzzV/Mia8HDw8Nb82awWUxwLJwdDW/h4eHhneUVP+zLYaw8nG1Dh3zzwMPDwzvL2z9iHljsy+76ZwAeHh7eNV4bzs6C2raJleNfDF3h4eHhXebNfvznt0wK5XwLiZIVPDw8vKO8pIyetcHyzWbThCtSajw8PLy3dIg27a58Wd+s5/Xuh4eHh/eWwnoW9baF72wQoSim8fDw8C7w8iX7uzw2pLwl9iLMxcPDwzvEmz1o++h5EJwMKxThCB4eHt4F3mzxnRW4s5hj8yLw8PDw7vHyzaANGpLmVj7EMGuJ4eHh4d3jJY2xdhtol/7Z3vXianh4eHgfxps19dvyOm+G4eHh4X0mb9YwixbxfTevrevx8PDwFry26ZXHFm1xnJxfvDI8PDy8C7z2B/8mRMhj2bp03hx4eHh4Ke8HwDCIvdnSe6kAAAAASUVORK5CYII=" alt="微信分享二维码">
 </div>
 
 

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://holykillin.github.io/"/>
-  <updated>2019-06-01T11:37:05.904Z</updated>
+  <updated>2019-06-09T10:49:00.818Z</updated>
   <id>https://holykillin.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>js中当数字与字符串相遇</title>
+    <link href="https://holykillin.github.io/2019/06/09/js%E4%B8%AD%E5%BD%93%E6%95%B0%E5%AD%97%E4%B8%8E%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9B%B8%E9%81%87/"/>
+    <id>https://holykillin.github.io/2019/06/09/js中当数字与字符串相遇/</id>
+    <published>2019-06-09T03:48:00.000Z</published>
+    <updated>2019-06-09T10:49:00.818Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="备忘录"><a href="#备忘录" class="headerlink" title="备忘录"></a>备忘录</h5><p>js中字符串与数字间的运算分三种情况</p><h4 id="第一种，加号“-”："><a href="#第一种，加号“-”：" class="headerlink" title="第一种，加号“+”："></a>第一种，加号“+”：</h4><p>“12” + 12 = 12 + “12” = “1212”</p><p>无论怎么变换位置，结果都为字符串，因为“ + ”是个特殊的符号，除了基本运算外，在程序里还有个作用就是——连接，除非两个都是数字，否则都会把其中的数字转换为字符串相连接。</p><h4 id="第二种，第一个（无论是字串还是数字）前面有符号："><a href="#第二种，第一个（无论是字串还是数字）前面有符号：" class="headerlink" title="第二种，第一个（无论是字串还是数字）前面有符号："></a>第二种，第一个（无论是字串还是数字）前面有符号：</h4><style>td{   border:1px solid}  p{text-indent:2em;font-size:21px;font-family:楷体,cursive}</style><table><tr><td>+"12" + 12 = +12 + 12 = 24 </td><td>因为"12"前面有+号（或者叫连字符），+号前面没有别的东西了，所以就判断它表示的是 一个“正”数，进而将“12”转换成了数字。</td></tr><tr><td>+12 + "12" = 12 + "12" ="1212"</td><td>这个就跟第一种一样了</td></tr></table><h4 id="第三种，其他运算符："><a href="#第三种，其他运算符：" class="headerlink" title="第三种，其他运算符："></a>第三种，其他运算符：</h4><p>“12” - 12 = 0   “12” * 12 = 144   “12” / 12 = 1 </p><p>其他运算符仅此一种作用，因而当字串遇到它们时，就自转为数字了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;备忘录&quot;&gt;&lt;a href=&quot;#备忘录&quot; class=&quot;headerlink&quot; title=&quot;备忘录&quot;&gt;&lt;/a&gt;备忘录&lt;/h5&gt;&lt;p&gt;js中字符串与数字间的运算分三种情况&lt;/p&gt;
+&lt;h4 id=&quot;第一种，加号“-”：&quot;&gt;&lt;a href=&quot;#第一种，加号“-”：&quot; c
+      
+    
+    </summary>
+    
+      <category term="大前端" scheme="https://holykillin.github.io/categories/%E5%A4%A7%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="JavaScript" scheme="https://holykillin.github.io/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>

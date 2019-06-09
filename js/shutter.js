@@ -112,7 +112,7 @@
         }
       }
 
-      this.$shutterDesc.animate({bottom: -44});
+      this.$shutterDesc.animate({bottom: -94});
 
       var random = function (min, max) {
         return Math.floor(Math.random() * (max + 1) - min);
@@ -177,7 +177,7 @@
           self.b_stop = false;
 
           self.toggleMove('next');
-          self.$shutterDesc.animate({bottom: -44});
+          self.$shutterDesc.animate({bottom: -94});
         }
       });
 
